@@ -1,0 +1,31 @@
+application: crushed-app
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /appstorebutton.png
+  static_files: appstorebutton.png
+  upload: appstorebutton.png
+
+- url: /background.jpg
+  static_files: background.jpg
+  upload: background.jpg
+
+- url: /infatuateMeHome.png
+  static_files: infatuateMeHome.png
+  upload: infatuateMeHome.png
+
+- url: /iphone5screen.png
+  static_files: iphone5screen.png
+  upload: iphone5screen.png
+
+- url: /.*
+  script: crushed.app
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+- name: jinja2
+  version: "2.6"
