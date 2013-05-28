@@ -1,3 +1,4 @@
+#(C) 2013 infatuateMe
 import cgi
 import facebook
 import jinja2
